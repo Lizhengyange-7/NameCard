@@ -1,0 +1,47 @@
+body {
+  margin: 20px;
+}
+.card {
+  width: 500px;
+  margin: 0 auto;
+  padding: 20px;
+  display: flex;
+  justify-content: space-around;
+  background: linear-gradient(135deg, #43cbff, #9708cc);
+  background-size: 400% 400%;
+  animation: diagonal-gradient 15s ease infinite;
+  box-sizing: border-box;
+  border: 8px solid rgba(51, 0, 255, 0.605);
+  border-bottom: 8px dashed rgb(217, 108, 239);
+  text-align: center;
+  color: #ffffff;
+  font-family: "仿宋", "微软雅黑", serif;
+  text-shadow: 10px 10px 15px #000000a8;
+}
+
+@keyframes diagonal-gradient {
+  0% {
+    background-position: 0% 0%;
+    box-shadow: 0px 0px 0px #9439d1dc;
+  }
+  50% {
+    background-position: 100% 100%;
+    box-shadow: 0px 0px 300px #9439d1dc;
+  }
+  100% {
+    background-position: 0% 0%;
+    box-shadow: 0px 0px 0px #9439d1dc;
+  }
+}
+
+.avatar {
+  width: 150px;
+  border: 3px solid #ffffff;
+  border-radius: 15%;
+}
+.italic {
+  font-style: italic;
+}
+.dashed {
+  border: rgb(177, 51, 112) dashed 5px;
+}
